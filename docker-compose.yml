@@ -1,7 +1,7 @@
 services:
   webdav:
     image: derkades/webdav
-    volumes: ['path/to/data:/data']
+    volumes: ['/Users/ghio/kDrive/webdav_zotero:/data']
     ports: ['8080:80']
     environment:
       USERNAME: webdavuser
