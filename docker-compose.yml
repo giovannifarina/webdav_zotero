@@ -1,0 +1,9 @@
+services:
+  webdav:
+    image: derkades/webdav
+    volumes: ['path/to/data:/data']
+    ports: ['8080:80']
+    environment:
+      USERNAME: webdavuser
+      PASSWORD: webdavpass
+    restart: unless-stopped
