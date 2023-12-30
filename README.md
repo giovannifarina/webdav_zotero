@@ -11,6 +11,7 @@ The same approach can be applied with any other cloud storage / application that
 ## Requirements:
 - Zotero https://www.zotero.org/
 - Docker https://www.docker.com/
+- docker-compose
 - kdrive https://www.infomaniak.com/it/kdrive
   - Create a new account, install the synchronization app, create a folder inside your cloud storage where to store the Zotero library, synchronize the folder on your machine with the dedicated app.
 
@@ -34,14 +35,17 @@ You can edit the other basic configuration parameters therein if you like;
 
 `docker-compose -p webdav_zotero up -d`
 
-4. Edit Zotero's settings
+4. Grant write permission to the volume folder to "other" 
+
+5. Edit Zotero's settings
    1. Login with your Zotero account
    2. Below, select WebDAV
    3. Set the parameters as in the following picture
    4. Click on the verify button to check if WebDAV is properly working
 
-5. Apply the same procedure on all the machine you would like to get synchronized. Remember to keep your synchronization app active on the folder you provided at point 2. The WebDav server should start automatically when you start Docker.
+6. Apply the same procedure on all the machine you would like to get synchronized. Remember to keep your synchronization app active on the folder you provided at point 2. The WebDav server should start automatically when you start Docker.
 
 <p align="center">
     <img src="zotero_settings.png">
 </p>
+
