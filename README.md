@@ -35,7 +35,10 @@ You can edit the other basic configuration parameters therein if you like;
 
 `docker-compose -p webdav_zotero up -d`
 
-4. Grant write permission to the volume folder to "other" 
+4. Grant write permission to the volume folder to "other" (unsafe version)
+
+`chmod -R 777 /home/gio/kDrive/webdav_zotero/zotero`
+
 
 5. Edit Zotero's settings
    1. Login with your Zotero account
